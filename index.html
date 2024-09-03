@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swati - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px ;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.6rem;
+          
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px auto;
+            padding: 0 20px;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            text-align: center; /* Center text for smaller screens */
+        }
+
+        .firstSection>div {
+            flex: 1;
+            min-width: 250px;
+            margin: 20px;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 20px;
+        }
+
+        .rightSection img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 30px 80px ;
+            max-width: 1300px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .secondSection .box span:hover {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box div:hover {
+            font-size: 1.2rem;
+            color: rgb(153, 153, 226);
+        }
+
+        .secondSection .box {
+            margin: 27px 0px;
+        }
+
+        .buttons {
+            margin-top: 34px;
+        }
+
+        .buttons button {
+            padding: 9px 14px;
+            border-radius: 15px;
+            background-color: white;
+            color: dodgerblue;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 0 3px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .buttons button:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul li {
+                margin: 0 10px;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                padding: 0 10px;
+            }
+
+            .rightSection img {
+                width: 80%; /* Adjusted width for smaller screens */
+            }
+
+            .secondSection h1 {
+                font-size: 1.3rem;
+            }
+
+            .buttons button {
+                width: 100%; /* Full width buttons on smaller screens */
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Mobile Specific Styles */
+        @media (max-width: 480px) {
+            .left {
+                font-size: 1.2rem;
+            }
+
+            .firstSection {
+                margin: 10px 0;
+            }
+
+            .rightSection img {
+                width: 90%; /* Adjusted width for smaller screens */
+            }
+
+            .secondSection h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Swati's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/F:/swati/my_portfolio/home.html">Home</a></li>
+                    <li><a href="/F:/swati/my_portfolio/about.html">About</a></li>
+                    <li><a href="/F:/swati/my_portfolio/project.html">Projects</a></li>
+                    <li><a href="/F:/swati/my_portfolio/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey !!! my name is <span class="purple">Swati</span>
+                <div>Welcome to My Portfolio</div>
+                <span id="element"></span><br>
+                <div class="buttons">
+                    <a href="/F:/swati/my_portfolio/NEWRESUME.pdf" target="_blank"><button>Download Resume</button></a>
+                    <a href="/F:/swati/my_portfolio/contact.html"><button>Contact Me</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image.png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <span><b>Internship:</b></span><br>
+                <div>I have recently completed my internship in Java. I worked on the "Bank Management System" project, focusing on the Stationery Module.</div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['I am Passionate.', 'I am Enthusiastic.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
